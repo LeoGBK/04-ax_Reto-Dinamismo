@@ -5,7 +5,7 @@ body {
   
   /* Se definen los estilos en la cabecera (título y menú) */
   .cabecera {
-    background-color: rgb(33, 32, 32);
+    background-color: rgb(95, 204, 231);
     color: rgb(240, 255, 255);
     width: 100%;
     text-align: center;
@@ -18,21 +18,6 @@ body {
     padding: 20px 0px 20px 0px;
     font-size: large;
     font-weight: bold;
-  }
-  
-  /* Estilo para el texto y contorno del menú */
-  .menu {
-    display: inline-block;
-    border: 2px solid rgb(240, 255, 255);
-    padding: 15px 15px 15px 15px;
-    font-size: x-small;
-  }
-  
-  /* Giving styles to a specific <a> tag (the menu text) */
-  a#boton {
-    text-decoration: none;
-    color: rgb(240, 255, 255);
-    padding: 0%;
   }
   
   /* Estilo para todo el gran bloque que contiene las tarjetas de películas */
