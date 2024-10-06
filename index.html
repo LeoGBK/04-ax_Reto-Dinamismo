@@ -1,13 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Página de Noticias con Estilos CSS</title>
 </head>
+<!-- Para este reto estoy tomando como base el código que elaboré en el Reto: Diseño adaptable -->
+
 <body>
-    
+    <!-- Este DIV contiene la cabecera principal con fondo negro -->
+    <div class="cabecera">
+        <h1 class="titulo">Películas Animadas</h1>
+        <div class="menu">
+            <!-- Se asigna un ID para en el arcvhivo CSS dar estilo a esta etiqueta <a> -->
+            <!-- Como se trata de un ejercicio, coloco la URL de mi resume (CV) por si deseas contratarme ;-) -->
+
+            <a id="boton" href="https://leobermeo.com" target="_blank">Menú</a>
+        </div>
+    </div>
+    <!-- Este DIV es el contenedor que alberga las tarjetas de cada película -->
+    <div class="cuerpo">
+        <!-- DIV de la tarjeta de la Película 1 -->
+        <div class="tarjeta">
+            <img class="center" src="movie-monsters.jpeg" alt="Monsters movie poster" width="250 px">
+            <h3 class="texto">Película 1</h3>
+            <p class="texto">Descripción del Producto 1</p>
+            <p class="texto">$19.99</p>
+            <!-- Como se trata de un ejercicio, coloco la URL de mi resume (CV) por si deseas contratarme ;-) -->
+            <a href="https://leobermeo.com" target="_blank">Comprar</a>
+        </div>
+        <!-- DIV de la tarjeta de la Película 2 -->
+        <div class="tarjeta">
+            <img class="center" src="movie-mario_bros.jpg" alt="Mario Bros movie poster" width="250 px">
+            <h3 class="texto">Película 2</h3>
+            <p class="texto">Descripción del Producto 2</p>
+            <p class="texto">$21.99</p>
+            <!-- Como se trata de un ejercicio, coloco la URL de mi resume (CV) por si deseas contratarme ;-) -->
+            <a href="https://leobermeo.com" target="_blank">Comprar</a>
+        </div>
+        <!-- DIV de la tarjeta de la Película 3 -->
+        <div class="tarjeta">
+            <img class="center" src="movie-transformers.jpg" alt="Transformers movie poster" width="250 px">
+            <h3 class="texto">Película 3</h3>
+            <p class="texto">Descripción del Producto 3</p>
+            <p class="texto">$29.99</p>
+            <!-- Como se trata de un ejercicio, coloco la URL de mi resume (CV) por si deseas contratarme ;-) -->
+            <a href="https://leobermeo.com" target="_blank">Comprar</a>
+        </div>
+    </div>
 </body>
+
 </html>
