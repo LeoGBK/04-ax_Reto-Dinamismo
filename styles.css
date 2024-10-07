@@ -43,7 +43,7 @@ body {
   background-color: rgb(255, 255, 255);
   width: 250px;
   margin: 10px 0px 10px 0px;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 50px 0px;
   display: flex;
   /* Para que el texto dentro de la tarjeta no aparezca al lado de la imagen, sino en columna */
   flex-direction: column;
@@ -59,14 +59,14 @@ body {
 /* Adicionalmente se le da un tamaño más grande al <h3> (título de la película) */
 h3 {
   font-weight: bold;
-  font-size: larger;
-  padding: 10px 0px 10px 10px;
+  font-size: large;
+  padding: 20px 0px 10px 20px;
 }
 
 /* Se le asigna estilo a etiqueta <p>  */
 p {
-  font-size: small;
-  padding: 10px 0px 0px 4%;
+  font-size: smaller;
+  padding: 10px 0px 0px 8%;
 }
 
 /* Aplicación de consulta de medios para cambiar tamaño de <img> y texto cuando el ancho de pantalla es mayor */
@@ -78,6 +78,7 @@ p {
   .tarjeta {
     width: 370px;
     margin: 25px 0px 25px 0px;
+    padding: 10px 0px 70px 0px;
   }
 
   .tarjeta img {
@@ -86,11 +87,11 @@ p {
   }
 
   h3 {
-    padding: 10px 0px 10px 10px;
+    padding: 10px 0px 10px 25px;
   }
 
   p {
-    padding: 10px 0px 0px 3%;
+    padding: 10px 0px 0px 7%;
   }
 
 }
