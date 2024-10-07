@@ -1,101 +1,96 @@
 /* Se define la fuente del texto para todo el documento (cabecera y tarjetas) */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Se definen los estilos en la cabecera (título y menú) */
-  .cabecera {
-    background-color: rgb(95, 204, 231);
-    color: rgb(240, 255, 255);
-    width: 100%;
-    text-align: center;
-    padding: 0px 0px 10px 0px;
-    position: fixed;
-  }
-  
-  /* Estilo para el título */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Se definen los estilos en la cabecera (título y menú) */
+.cabecera {
+  background-color: rgb(95, 204, 231);
+  color: rgb(240, 255, 255);
+  width: 100%;
+  text-align: center;
+  padding: 0px 0px 10px 0px;
+  position: fixed;
+}
+
+/* Estilo para el título */
+.titulo {
+  padding: 20px 0px 20px 0px;
+  font-size: large;
+  font-weight: bold;
+}
+
+/* Estilo para todo el gran bloque que contiene las tarjetas de películas */
+.cuerpo {
+  background-color: rgb(230, 230, 230);
+  padding: 120px 0px 1px 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  flex-wrap: wrap;
+}
+
+/* Estilo creado para centrar etiquetas (imágenes) con clase "center" dentro de la tarjeta */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Se le da estilo a la tarjeta de la película */
+.tarjeta {
+  background-color: rgb(255, 255, 255);
+  width: 250px;
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  /* Para que el texto dentro de la tarjeta no aparezca al lado de la imagen, sino en columna */
+  flex-direction: column;
+  border: 2px solid rgb(207, 207, 207);
+}
+
+/* Asignando una dimensión fija a las <img> para pantalla móvil */
+.tarjeta img {
+  width: 230px;
+  height: 350px;
+}
+
+/* Adicionalmente se le da un tamaño más grande al <h3> (título de la película) */
+h3 {
+  font-weight: bold;
+  font-size: larger;
+  padding: 10px 0px 10px 10px;
+}
+
+/* Se le asigna estilo a etiqueta <p>  */
+p {
+  font-size: small;
+  padding: 10px 0px 0px 4%;
+}
+
+/* Aplicación de consulta de medios para cambiar tamaño de <img> y texto cuando el ancho de pantalla es mayor */
+@media only screen and (min-width: 500px) {
   .titulo {
-    padding: 20px 0px 20px 0px;
-    font-size: large;
-    font-weight: bold;
+    font-size: xx-large;
   }
-  
-  /* Estilo para todo el gran bloque que contiene las tarjetas de películas */
-  .cuerpo {
-    background-color: rgb(230, 230, 230);
-    padding: 120px 0px 1px 0px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  
-    flex-wrap: wrap;
-  }
-  
-  /* Estilo creado para centrar etiquetas (imágenes) con clase "center" dentro de la tarjeta */
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* Se le da estilo a la tarjeta de la película */
+
   .tarjeta {
-    background-color: rgb(255, 255, 255);
-    width: 250px;
-    margin: 10px 0px 10px 0px;
-    padding: 10px 0px 10px 0px;
-    display: flex;
-    /* Para que el texto dentro de la tarjeta no aparezca al lado de la imagen, sino en columna */
-    flex-direction: column;
-    border: 2px solid rgb(207, 207, 207);
+    width: 370px;
+    margin: 25px 0px 25px 0px;
   }
-  
-  /* Asignando una dimensión fija a las <img> para pantalla móvil */
+
   .tarjeta img {
-    width: 230px;
-    height: 350px;
+    width: 350px;
+    height: 500px;
   }
-  
-  /* Padding y peso del texto dentro de cada tarjeta */
-  .texto {
-    padding: 10px 0px 10px 10px;
-    font-weight: bold;
-  }
-  
-  /* Adicionalmente se le da un tamaño más grande al <h3> (título de la película) */
+
   h3 {
-    font-size: larger;
+    padding: 10px 0px 10px 10px;
   }
-  
-  /* Se le asigna padding superior e izquierdo a etiqueta <a>  */
-  a {
-    padding: 10px 0px 0px 10px;
+
+  p {
+    padding: 10px 0px 0px 3%;
   }
-  
-  /* Aplicación de consulta de medios para cambiar tamaño de <img> y texto cuando el ancho de pantalla es mayor */
-  @media only screen and (min-width: 500px) {
-    .titulo {
-      font-size: xx-large;
-    }
-  
-    .tarjeta {
-      width: 400px;
-      margin: 25px 0px 25px 0px;
-    }
-  
-    .tarjeta img {
-      width: 350px;
-      height: 500px;
-    }
-  
-    .texto {
-      font-family: Arial, Helvetica, sans-serif;
-      padding: 15px 0px 10px 25px;
-      font-weight: bold;
-    }
-  
-    h3 {
-      font-size: x-large;
-    }
-  }
-  
+
+}
