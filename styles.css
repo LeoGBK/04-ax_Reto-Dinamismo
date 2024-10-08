@@ -45,7 +45,7 @@ body {
 /* Giving style to .text class so the article preview remains unreadeable */
 /* Dando estilo a la clase .text para que la vista previa del artículo se mantenga ilegible */
 .text {
-  color: #ffffff;
+  opacity: 0;
 }
 
 /* Style the article card */
@@ -74,7 +74,7 @@ body {
     }
 
     .text {
-        color: #b2b0b0;;
+        opacity: 0.4;
     }
   }
 }
