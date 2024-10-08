@@ -42,8 +42,11 @@ body {
   margin-right: auto;
 }
 
-/* Giving style to .texto class so the article preview remains unreadeable */
-/* Dando estilo a la clase .texto para que la vista previa del artículo se mantenga ilegible */
+/* Giving style to .text class so the article preview remains unreadeable */
+/* Dando estilo a la clase .text para que la vista previa del artículo se mantenga ilegible */
+.text {
+    color: #ffffff;
+}
 
 /* Style the article card */
 /* Se le da estilo a la tarjeta del artículo */
