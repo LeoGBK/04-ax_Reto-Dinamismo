@@ -2,13 +2,14 @@
 /* Se define la fuente del texto para todo el documento (cabecera y tarjetas) */
 body {
   font-family: Arial, Helvetica, sans-serif;
+  background-color: #e6e6e6;
 }
 
 /* Styles are defined in the header (title and menu) */
 /* Se definen los estilos en la cabecera (título y menú) */
 .cabecera {
-  background-color: rgb(95, 204, 231);
-  color: rgb(240, 255, 255);
+  background-color: #5fcce7;
+  color: #f0ffff;
   width: 100%;
   text-align: center;
   position: fixed;
@@ -25,7 +26,6 @@ body {
 /* Style for the entire large block containing the article cards */
 /* Estilo para todo el gran bloque que contiene las tarjetas de artículos */
 .cuerpo {
-  background-color: rgb(230, 230, 230);
   padding: 120px 0px 1px 0px;
   display: flex;
   justify-content: space-evenly;
@@ -54,7 +54,7 @@ body {
   background-color: #ffffff;
   width: 250px;
   margin: 10px 0px 10px 0px;
-  padding: 10px 0px 50px 0px;
+  padding: 10px 0px 0px 0px;
   display: flex;
   /* So that the text inside the card does not appear next to the image, but in a column */
   /* Para que el texto dentro de la tarjeta no aparezca al lado de la imagen, sino en columna */
@@ -65,17 +65,35 @@ body {
   /* Making the background, mouse pointer, title color, article card to change and article text preview to show up on hover */
   /* Haciendo que cambien el fondo, el puntero del ratón, el color del título, la tarjeta y que se muestre el texto previo del artículo en hover */
   &:hover {
-    background-color: #fbf9f9;
     cursor: pointer;
     transform: translateY(-15px);
 
-    h3 {
-      color: #fc6d0d;
-    }
-
     .text {
-        opacity: 0.4;
+      opacity: 0.4;
     }
+  }
+}
+
+/* Separately styling the content and specifying changes on hover */
+/* Dando por separado estilo de transición al contenido y especificando cambios en hover */
+.content {
+  padding-bottom: 20px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.content h3 {
+  transition: color 0.5s ease-in-out;
+}
+
+.content .text {
+  transition: opacity 0.5s ease-in-out;
+}
+
+.content:hover {
+  background-color: #f2f2f2;
+
+  h3 {
+    color: #fc6d0d;
   }
 }
 
@@ -111,12 +129,13 @@ p {
   .tarjeta {
     width: 370px;
     margin: 25px 0px 25px 0px;
-    padding: 10px 0px 70px 0px;
+    padding: 10px 0px 0px 0px;
   }
 
   .tarjeta img {
-    width: 350px;
-    height: 500px;
+    width: 320px;
+    height: 420px;
+    padding-bottom: 10px;
   }
 
   h3 {
