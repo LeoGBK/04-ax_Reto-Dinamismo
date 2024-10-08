@@ -45,7 +45,7 @@ body {
 /* Giving style to .text class so the article preview remains unreadeable */
 /* Dando estilo a la clase .text para que la vista previa del artículo se mantenga ilegible */
 .text {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 /* Style the article card */
@@ -62,6 +62,8 @@ body {
   border: 2px solid #cfcfcf;
   transition: transform 0.5s ease-in-out;
 
+  /* Making the background, mouse pointer, title color, article card to change and article text preview to show up on hover */
+  /* Haciendo que cambien el fondo, el puntero del ratón, el color del título, la tarjeta y que se muestre el texto previo del artículo en hover */
   &:hover {
     background-color: #fbf9f9;
     cursor: pointer;
@@ -69,6 +71,10 @@ body {
 
     h3 {
       color: #fc6d0d;
+    }
+
+    .text {
+        color: #b2b0b0;;
     }
   }
 }
