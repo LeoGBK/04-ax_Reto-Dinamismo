@@ -1,8 +1,10 @@
+/* The text font is defined for the entire document (header and cards) */
 /* Se define la fuente del texto para todo el documento (cabecera y tarjetas) */
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Styles are defined in the header (title and menu) */
 /* Se definen los estilos en la cabecera (título y menú) */
 .cabecera {
   background-color: rgb(95, 204, 231);
@@ -12,6 +14,7 @@ body {
   position: fixed;
 }
 
+/* Style for the title */
 /* Estilo para el título */
 .titulo {
   padding: 40px 0px 40px 0px;
@@ -19,6 +22,7 @@ body {
   font-weight: bold;
 }
 
+/* Style for the entire large block containing the movie cards */
 /* Estilo para todo el gran bloque que contiene las tarjetas de películas */
 .cuerpo {
   background-color: rgb(230, 230, 230);
@@ -30,6 +34,7 @@ body {
   flex-wrap: wrap;
 }
 
+/* Style created to center labels (images) with class "center" inside the card */
 /* Estilo creado para centrar etiquetas (imágenes) con clase "center" dentro de la tarjeta */
 .center {
   display: block;
@@ -37,13 +42,18 @@ body {
   margin-right: auto;
 }
 
-/* Se le da estilo a la tarjeta de la película */
+/* Giving style to .texto class so the article preview remains unreadeable */
+/* Dando estilo a la clase .texto para que la vista previa del artículo se mantenga ilegible */
+
+/* Style the article card */
+/* Se le da estilo a la tarjeta del artículo */
 .tarjeta {
   background-color: #ffffff;
   width: 250px;
   margin: 10px 0px 10px 0px;
   padding: 10px 0px 50px 0px;
   display: flex;
+  /* So that the text inside the card does not appear next to the image, but in a column */
   /* Para que el texto dentro de la tarjeta no aparezca al lado de la imagen, sino en columna */
   flex-direction: column;
   border: 2px solid #cfcfcf;
@@ -60,12 +70,14 @@ body {
   }
 }
 
+/* Assigning a fixed dimension to <img> for mobile screen */
 /* Asignando una dimensión fija a las <img> para pantalla móvil */
 .tarjeta img {
   width: 230px;
   height: 350px;
 }
 
+/* Additionally, the <h3> (film title) is given a larger size */
 /* Adicionalmente se le da un tamaño más grande al <h3> (título de la película) */
 h3 {
   font-weight: bold;
@@ -73,12 +85,14 @@ h3 {
   padding: 20px 0px 10px 20px;
 }
 
-/* Se le asigna estilo a etiqueta <p>  */
+/* Style is assigned to the <p> tag */
+/* Se le asigna estilo a etiqueta <p> */
 p {
   font-size: smaller;
   padding: 10px 0px 0px 8%;
 }
 
+/* Media query application to resize <img> and text when screen width is larger */
 /* Aplicación de consulta de medios para cambiar tamaño de <img> y texto cuando el ancho de pantalla es mayor */
 @media only screen and (min-width: 500px) {
   .titulo {
