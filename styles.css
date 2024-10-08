@@ -39,18 +39,24 @@ body {
 
 /* Se le da estilo a la tarjeta de la película */
 .tarjeta {
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   width: 250px;
   margin: 10px 0px 10px 0px;
   padding: 10px 0px 50px 0px;
   display: flex;
   /* Para que el texto dentro de la tarjeta no aparezca al lado de la imagen, sino en columna */
   flex-direction: column;
-  border: 2px solid rgb(207, 207, 207);
-  transition: transform 0.25s ease-in-out;
+  border: 2px solid #cfcfcf;
+  transition: transform 0.5s ease-in-out;
 
   &:hover {
+    background-color: #fbf9f9;
+    cursor: pointer;
     transform: translateY(-15px);
+
+    h3 {
+      color: #fc6d0d;
+    }
   }
 }
 
