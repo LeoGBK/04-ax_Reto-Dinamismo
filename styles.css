@@ -47,6 +47,11 @@ body {
   /* Para que el texto dentro de la tarjeta no aparezca al lado de la imagen, sino en columna */
   flex-direction: column;
   border: 2px solid rgb(207, 207, 207);
+  transition: transform 0.25s ease-in-out;
+
+  &:hover {
+    transform: translateY(-15px);
+  }
 }
 
 /* Asignando una dimensión fija a las <img> para pantalla móvil */
@@ -92,5 +97,4 @@ p {
   p {
     padding: 10px 0px 0px 7%;
   }
-
 }
