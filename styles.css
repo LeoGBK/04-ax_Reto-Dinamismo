@@ -22,8 +22,8 @@ body {
   font-weight: bold;
 }
 
-/* Style for the entire large block containing the movie cards */
-/* Estilo para todo el gran bloque que contiene las tarjetas de películas */
+/* Style for the entire large block containing the article cards */
+/* Estilo para todo el gran bloque que contiene las tarjetas de artículos */
 .cuerpo {
   background-color: rgb(230, 230, 230);
   padding: 120px 0px 1px 0px;
